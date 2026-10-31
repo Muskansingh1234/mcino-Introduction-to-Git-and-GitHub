@@ -1,0 +1,39 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261031132205
+Username: DESKTOP-QDO0E0J\Admin
+RunAs User: DESKTOP-QDO0E0J\Admin
+Configuration Name: 
+Machine: DESKTOP-QDO0E0J (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\2c33b50b16\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 1256
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\bug-fix-revert
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cAdmin\x5cOneDrive\x5cDesktop\x5cmcino-Introduction-to-Git-and-GitHubPS C:\Users\Admin\OneDrive\Desktop\mcino-Introduction-to-Git-and-GitHub> ]633;B
+PS>curl.exe -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/13212 | ConvertFrom-Json | Select-Object number, html_url, state, @{Name='head_repo';Expression={$_.head.repo.full_name}}, @{Name='head_branch';Expression={$_.head.ref}}, @{Name='base_repo';Expression={$_.base.repo.full_name}}, @{Name='base_branch';Expression={$_.base.ref}} | Format-List
+
+
+number      : 13212
+html_url    : https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/13212
+state       : closed
+head_repo   : Muskansingh1234/mcino-Introduction-to-Git-and-GitHub
+head_branch : bug-fix-revert
+base_repo   : ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+base_branch : main
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cAdmin\x5cOneDrive\x5cDesktop\x5cmcino-Introduction-to-Git-and-GitHubPS C:\Users\Admin\OneDrive\Desktop\mcino-Introduction-to-Git-and-GitHub> ]633;B
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261031132226
+**********************
